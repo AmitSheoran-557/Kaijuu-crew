@@ -5,3 +5,22 @@
 .leading-primary{
     line-height: 150% !important;
 }
+.discord-svg:hover svg path{
+fill: #FF002A !important;
+}   
+/* =================== Slider css ============================= */
+
+.slick-next::before{
+    display: none;
+}
+.slick-prev::before{
+    display: none;
+}
+.slick-next{
+    width: 83px;
+    transform: translateX(60px);
+}
+.slick-prev{
+    width: 83px;
+    transform: translateX(-60px);
+}

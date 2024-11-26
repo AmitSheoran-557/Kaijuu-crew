@@ -9,22 +9,22 @@
     <link rel="icon" href="./assets/image/webp/favicon-img.png">
     <title>Kaijuu-crew</title>
     <meta name="title" content="Kaijuu Crew" />
-    <meta name="description"
-        content="The ocean surges with spray and foam, As Kaijuu rise from depth to roam." />
+    <meta name="description" content="The ocean surges with spray and foam, As Kaijuu rise from depth to roam." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nakashi-ivory.vercel.app/" />
+    <meta property="og:url" content="https://kaijuu-crew-eqt4.vercel.app/" />
     <meta property="og:title" content="Kaijuu Crew" />
     <meta property="og:description"
         content="The ocean surges with spray and foam, As Kaijuu rise from depth to roam." />
     <meta property="og:image" content="/meta-tag-img.png" />
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://nakashi-ivory.vercel.app/ " />
+    <meta property="twitter:url" content="https://kaijuu-crew-eqt4.vercel.app/" />
     <meta property="twitter:title" content="Kaijuu Crew" />
     <meta property="twitter:description"
         content="The ocean surges with spray and foam, As Kaijuu rise from depth to roam." />
     <meta property="twitter:image" content="/meta-tag-img.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- =========================================== font-family-link ================================================ -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/godzilla" rel="stylesheet">
@@ -50,7 +50,7 @@
                 },
                 extend: {
                     backdropBlur: {
-                        '35': '35px', // Custom blur value
+                        '35': '35px',
                     },
                     fontSize: {
                         "customLg": '72px',
@@ -84,7 +84,7 @@
     <main class="overflow-hidden relative max-w-[1920px] mx-auto">
 
 
-        <!-- ================================= Hero section ============================================= -->
+        <!-- ================================= Hero section =============================================== -->
         <section class=" bg-light-black" id="hero">
             <div class="container px-3 mx-auto max-w-[1320px] w-full ">
                 <nav class="flex justify-between items-center xl:pt-[35px] lg:pt-7 pt-5  xl:pb-[26px] lg:pb-5 pb-4">
@@ -99,60 +99,42 @@
                             <a class="hover:text-primary duration-300 ease-linear" href="#roadmap">Roadmap</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#team">Team</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#faq">FAQ</a>
-                            <a class="hover:text-primary duration-300 ease-linear flex gap-[11px] justify-center items-center"
-                                href="#language"> <img src="./assets/image/svg/flag-img.svg" alt="flag-img">ENG</a>
-                            <div class="lg:pb-[100px] flex gap-4 xl:mt-[230px] lg:hidden mt-[104px] pb-[50px] block">
-                                <a href=""
-                                    class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
-                                    <img class="xl:size-5" src="./assets/img/svg/telegram-icon.svg" alt="telegram-icon">
-                                </a>
-                                <a href="/"
-                                    class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
-                                    <img class="xl:size-5" src="./assets/img/svg/discord-icon.svg" alt="discord-icon">
-                                </a>
-                                <a href="/"
-                                    class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
-                                    <img class="xl:size-5" src="./assets/img/svg/twitter-icon.svg" alt="twitter-icon">
-                                </a>
-                                <a href="/"
-                                    class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
-                                    <img class="xl:size-5" src="./assets/img/svg/logomark-icon.svg"
-                                        alt="logo-mark-icon">
-                                </a>
-                            </div>
+                            <select class="bg-transparent max-w-max" name="" id="">
+                                <option class="flex max-w-max" value="">
+                                    <div>
+                                        <img class="max-w-10 w-full" src="./assets/image/svg/flag-img.svg"
+                                            alt="flag-img">
+                                        <p class="max-w-max">ENG</p>
+                                    </div>
+                                </option>
+                                <option value="">Hindi</option>
+                                <option value="">Japenese</option>
+                            </select>
                         </div>
                     </div>
 
                     <div id="menu-bar"
-                        class="flex flex-col lg:hidden menubar text-end justify-between cursor-pointer z-[200] scroll-m-0  w-[22px] h-3 pt-[1px]">
+                        class="flex flex-col lg:hidden menubar text-end justify-between cursor-pointer z-[200] scroll-m-0  w-[32px] h-5 pt-[1px]">
                         <span
-                            class="h-[1.5px] w-4 ml-auto bg-white origin-left transition-all duration-300 rounded-md menubarFirst"></span>
+                            class="w-7 h-[2px] mb-[1px] rounded-lg bg-white menubarFirst origin-left  duration-300 ease-linear"></span>
+                        <span class="w-7 h-[2px] mb-[1px] rounded-lg bg-white menubarSecond"></span>
                         <span
-                            class="w-full h-[1px] transition-all duration-300 bg-white origin-left rounded-md menubarSecond"></span>
-                        <div class="cross-icon hidden z-50 relative -mt-1" id="toggleImage">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
-                        </div>
+                            class="w-7 h-[2px] mb-[1px] rounded-lg bg-white menubarThird origin-left  duration-300 ease-linear"></span>
                     </div>
                 </nav>
             </div>
             <div class="bg-hero-bg bg-cover bg-no-repeat">
-                <div class="container lg:mt-[55px]">
-                    <div class="flex flex-wrap lg:mb-8 mb-6">
-                        <div class="lg:w-6/12 w-full px-3 flex justify-center flex-col">
+                <div
+                    class="container max-w-[1320px] w-full mx-auto flex flex-col justify-center items-center lg:mt-[55px] mt-12">
+                    <div class="flex flex-wrap lg:mb-8 mb-6 w-full">
+                        <div class="lg:w-6/12 w-full px-3 flex justify-center max-lg:items-center flex-col">
                             <h1
-                                class="text-customXl max-w-[400px] text-primary leading-[86%] lg:mb-[18px] font-godzilla mb-3">
+                                class="2xl:text-customXl xl:text-9xl text-7xl max-sm:text-center  max-w-[400px] text-primary leading-[86%] lg:mb-[18px] font-godzilla mb-3">
                                 Kaijuu
                                 <span class="text-white font-godzilla">Crew</span>
                             </h1>
                             <p
-                                class="text-white lg:text-[22px] leading-normal text-base max-w-[320px] lg:mb-[18px] mb-3 text-left">
+                                class="text-white lg:text-[22px] max-lg:text-center leading-normal md:text-base text-sm max-lg:px-4 lg:max-w-[320px] lg:mb-[18px] mb-3 text-left">
                                 The
                                 ocean surges with spray and foam,
                                 As Kaijuu rise from depth to roam.
@@ -163,7 +145,8 @@
                                 In search of untold wealth to hoard?
                                 Nay, but 'cause your Apes are Bored.
                             </p>
-                            <div id="timer" class="font-bold text-5xl text-white leading-primary">
+                            <div id="timer"
+                                class="font-bold lg:text-5xl md:text-4xl text-2xl text-white leading-primary">
                                 10:20:15:10
                             </div>
                             <p
@@ -171,17 +154,30 @@
                                 Days left</p>
                             <div class="flex items-center gap-4">
                                 <button
-                                    class="flex justify-center items-center rounded-[7px] uppercase gap-[11px] font-bold lg:text-[18px] text-sm text-white leading-primary py-3 px-9 bg-primary max-w-[210px] w-full"><img
-                                        src="./assets/image/svg/discord-logo.svg" alt="discord-icon">join discord
+                                    class="flex discord-svg justify-center items-center hover:bg-white border-[2px] border-transparent hover:text-primary hover:border-primary duration-300 ease-linear rounded-[7px] uppercase gap-[11px] font-bold xl:text-[18px] lg:text-base text-xs text-white leading-primary lg:py-[13px] py-2 lg:px-[52.5px] px-7 bg-primary">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_67_195)">
+                                            <path
+                                                d="M18.6246 3.99704C17.1981 3.34235 15.6928 2.8751 14.1462 2.60691C14.1322 2.60455 14.1178 2.60659 14.105 2.61275C14.0922 2.6189 14.0816 2.62887 14.0747 2.64129C13.8809 2.98504 13.6664 3.43466 13.5165 3.78666C11.8494 3.53367 10.1538 3.53367 8.48673 3.78666C8.31955 3.39454 8.13042 3.01214 7.92023 2.64129C7.91318 2.62901 7.90257 2.61915 7.88981 2.61302C7.87705 2.60688 7.86273 2.60475 7.84873 2.60691C6.30186 2.87366 4.79623 3.34116 3.37036 3.99704C3.35816 4.00169 3.34795 4.01044 3.34148 4.02179C0.489732 8.28291 -0.292643 12.4395 0.0909822 16.5439C0.0923572 16.5632 0.104732 16.5824 0.119857 16.5948C1.78048 17.8249 3.63792 18.7641 5.61298 19.3723C5.62693 19.3767 5.64191 19.3765 5.65576 19.3718C5.66961 19.3671 5.68159 19.3581 5.68998 19.3462C6.11348 18.7687 6.49023 18.1595 6.81473 17.5188C6.8215 17.5056 6.82381 17.4906 6.82133 17.4759C6.81886 17.4613 6.81172 17.4479 6.80098 17.4377C6.79388 17.431 6.78545 17.4258 6.77623 17.4225C6.18383 17.1949 5.61009 16.9213 5.06023 16.6044C5.04487 16.5957 5.03345 16.5814 5.02833 16.5645C5.02321 16.5476 5.02479 16.5294 5.03273 16.5137C5.03741 16.5034 5.04449 16.4945 5.05336 16.4875C5.16886 16.4009 5.28436 16.3102 5.39436 16.2194C5.40407 16.2116 5.41573 16.2066 5.42809 16.2049C5.44044 16.2032 5.45302 16.2049 5.46448 16.2098C9.06561 17.8543 12.9637 17.8543 16.5209 16.2098C16.5327 16.2046 16.5458 16.2028 16.5586 16.2045C16.5715 16.2062 16.5836 16.2114 16.5937 16.2194C16.7037 16.3102 16.8192 16.4009 16.9347 16.4875C16.9441 16.4944 16.9516 16.5034 16.9566 16.5139C16.9616 16.5243 16.964 16.5359 16.9634 16.5475C16.9629 16.559 16.9595 16.5703 16.9535 16.5802C16.9475 16.5902 16.9392 16.5985 16.9292 16.6044C16.3806 16.9242 15.8062 17.1974 15.2119 17.4212C15.2024 17.4246 15.1938 17.4301 15.1866 17.4372C15.1795 17.4443 15.174 17.4529 15.1706 17.4624C15.1674 17.4716 15.1662 17.4813 15.1669 17.491C15.1676 17.5007 15.1702 17.5102 15.1747 17.5188C15.5047 18.1582 15.8829 18.7687 16.2981 19.3462C16.3065 19.3581 16.3185 19.3671 16.3323 19.3718C16.3462 19.3765 16.3612 19.3767 16.3751 19.3723C18.3535 18.7659 20.2139 17.8267 21.8765 16.5948C21.8848 16.589 21.8917 16.5815 21.8967 16.5726C21.9017 16.5638 21.9047 16.554 21.9054 16.5439C22.3646 11.7988 21.1367 7.67654 18.6521 4.02316C18.6496 4.01713 18.6459 4.01169 18.6411 4.00719C18.6364 4.00269 18.6308 3.99923 18.6246 3.99704ZM7.35236 14.0442C6.26748 14.0442 5.37511 13.0487 5.37511 11.8277C5.37511 10.6053 6.25098 9.60979 7.35236 9.60979C8.46198 9.60979 9.34611 10.6135 9.32961 11.8277C9.32961 13.0487 8.45373 14.0442 7.35236 14.0442ZM14.6619 14.0442C13.5784 14.0442 12.6846 13.0487 12.6846 11.8277C12.6846 10.6053 13.5605 9.60979 14.6619 9.60979C15.7715 9.60979 16.657 10.6135 16.6391 11.8277C16.6391 13.0487 15.7715 14.0442 14.6619 14.0442Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_67_195">
+                                                <rect width="22" height="22" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="flex-nowrap">join discord</p>
                                 </button>
                                 <button
-                                    class="rounded-[7px] uppercase font-bold lg:text-[18px] text-sm text-white leading-primary py-3 px-9 bg-primary max-w-[198px] w-full">
+                                    class="rounded-[7px] uppercase font-bold xl:text-[18px] lg:text-base hover:bg-white border-[2px] border-transparent hover:text-primary hover:border-primary duration-300 ease-linear text-xs text-white leading-primary lg:py-[15px] py-[10px] lg:px-[55.5px] px-7 bg-primary">
                                     Connect Wallet
                                 </button>
                             </div>
                         </div>
                         <div class="lg:w-6/12 w-full px-3 flex justify-center flex-col">
-                            <img class="max-w-[707px]" src="./assets/image/webp/hero-section-img.png"
+                            <img class="max-w-[707px] max-lg:mt-3" src="./assets/image/webp/hero-section-img.png"
                                 alt="character-img">
                         </div>
                     </div>
@@ -192,14 +188,17 @@
             </div>
         </section>
 
-        <!-- ================================= About us section ============================================= -->
-        <section class="bg-dark-blue lg:pt-[61px] lg:pb-[135px]">
-            <div class="container">
-                <div class="flex flex-wrap justify-between">
-                    <div class="lg:w-7/12 w-full">
-                        <h1 class="text-customLg max-w-[300px] leading-none xl:mb-[29px] lg:mb-6 mb-3">About Us</h1>
+        <!-- ================================= About us section =========================================== -->
+        <section class="bg-dark-blue lg:pt-[61px] lg:pb-[135px] max-lg:py-12">
+            <div class="container mx-auto max-w-[1320px] max-2xl:px-4">
+                <div class="flex flex-wrap justify-between w-full">
+                    <div class="xl:w-7/12 w-full max-xl:flex flex-col justify-center items-center">
+                        <h2
+                            class="lg:text-customLg md:text-5xl text-4xl max-w-[340px] text-primary font-godzilla leading-none xl:mb-[29px] lg:mb-6 mb-3">
+                            ABOUT <span class="text-white font-godzilla">US</span>
+                        </h2>
                         <p
-                            class="text-white lg:text-[22px] leading-primary text-base max-w-[640px] xl:mb-[34px] lg:mb-7 mb-5 text-left">
+                            class="text-white lg:text-[22px] leading-primary md:text-base text-sm xl:max-w-[640px] max-xl:px-4 max-xl:text-center xl:mb-[34px] lg:mb-7 mb-5 text-left">
                             It was
                             popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                             passages,
@@ -218,25 +217,25 @@
                             Mint NFT
                         </button>
                     </div>
-                    <div class="lg:w-5/12 w-full flex justify-center items-end">
-                        <img class="max-w-[579px]" src="./assets/image/webp/about-us-sec-img.png" alt="character-img">
+                    <div class="xl:w-5/12 w-full flex justify-center items-end max-xl:mt-7">
+                        <img class="lg:max-w-[579px] max-w-[500px] w-full" src="./assets/image/webp/about-us-sec-img.png" alt="character-img">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================================= Classes section ============================================= -->
+        <!-- ================================= Classes section ============================================ -->
         <section class="bg-water-bg bg-cover lg:pt-[225px] pt-10 lg:pb-[171px] pb-24 -mt-1">
             <div class="container mx-auto overflow-visible max-w-[1794px] flex flex-col justify-center items-center">
                 <div class="flex justify-center items-center">
                     <h2
-                        class="text-customLg font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[85px] lg:mb-14 mb-7 uppercase">
+                        class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[85px] lg:mb-14 mb-7 uppercase">
                         Kaijuu <span class="text-white font-godzilla">Crew Classes</span>
                     </h2>
                 </div>
-                <div class="flex flex-wrap justify-center items-center xl:gap-[131px] lg:gap-28 md:gap-20 gap-12">
+                <div class="flex flex-wrap justify-center items-center xl:gap-[131px] lg:gap-28 md:gap-20 sm:gap-12 gap-8">
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
-                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-3"
+                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] md:mb-3 mb-1"
                             src="./assets/image/webp/scout-img.png" alt="scout-img">
                         <p
                             class="font-semibold xl:text-4xl lg:text-3xl text-2xl text-white leading-primary text-center">
@@ -244,35 +243,35 @@
                         </p>
                     </div>
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
-                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-3"
+                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] md:mb-3 mb-1"
                             src="./assets/image/webp/heavies-img.png" alt="heavies-img">
                         <p
                             class="font-semibold xl:text-4xl lg:text-3xl text-2xl text-white leading-primary text-center">
-                            Scouts
+                            Heavies
                         </p>
                     </div>
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
-                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-3"
+                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] md:mb-3 mb-1"
                             src="./assets/image/webp/questionmark-img.png" alt="questionmark-img">
                         <p
                             class="font-semibold xl:text-4xl lg:text-3xl text-2xl text-white leading-primary text-center">
-                            Scouts
+                            Legends
                         </p>
                     </div>
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
-                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-3"
+                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] md:mb-3 mb-1"
                             src="./assets/image/webp/elementals-img.png" alt="elementals-img">
                         <p
                             class="font-semibold xl:text-4xl lg:text-3xl text-2xl text-white leading-primary text-center">
-                            Scouts
+                            Elementals
                         </p>
                     </div>
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden">
-                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-3"
+                        <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] md:mb-3 mb-1"
                             src="./assets/image/webp/questionmark-img.png" alt="questionmark-img">
                         <p
                             class="font-semibold xl:text-4xl lg:text-3xl text-2xl text-white leading-primary text-center">
-                            Scouts
+                            ???
                         </p>
                     </div>
 
@@ -280,22 +279,21 @@
             </div>
         </section>
 
-        <!-- ================================= Story section ============================================= -->
-        <section class="bg-dark-blue lg:pt-[61px] lg:pb-[135px] -mt-1">
-            <div class="container">
-                <div class="flex flex-wrap justify-between">
-
+        <!-- ================================= Story section ============================================== -->
+        <section class="bg-dark-blue lg:pt-[61px] lg:pb-[135px] max-lg:py-12 -mt-1">
+            <div class="container mx-auto max-w-[1320px]">
+                <div class="flex flex-wrap max-lg:flex-col-reverse justify-between">
                     <div class="lg:w-6/12 w-full flex justify-center items-end">
                         <img class="max-w-[619px] w-full" src="./assets/image/webp/story-sec-img.png"
                             alt="character-img">
                     </div>
-                    <div class="lg:w-6/12 w-full flex justify-center flex-col">
+                    <div class="lg:w-6/12 w-full flex justify-center flex-col items-center">
                         <h2
-                            class="text-customLg font-godzilla max-w-[670px] text-primary  leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
+                            class="tlg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary  leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
                             story
                         </h2>
                         <p
-                            class="text-white lg:text-[22px] leading-primary text-base max-w-[640px] xl:mb-[34px] lg:mb-7 mb-5 text-left">
+                            class="text-white lg:text-[22px] leading-primary max-lg:text-center md:text-base max-lg:px-4 text-sm lg:max-w-[640px] xl:mb-[34px] lg:mb-7 mb-5 text-left">
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                             passages, and more recently with desktop publishing software like Aldus PageMaker including
                             versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -310,11 +308,11 @@
         </section>
 
         <!-- ================================= Traits section ============================================= -->
-        <section class="bg-water-bg-2 bg-cover  lg:pt-[97px] lg:pb-[141px] -mt-1">
+        <section class="bg-water-bg-2 bg-cover  lg:pt-[97px] lg:pb-[141px] max-lg:py-12 -mt-1">
             <div class="container">
                 <div class="flex justify-center items-center">
                     <h2
-                        class="text-customLg font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
+                        class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
                         Traits
                     </h2>
                 </div>
@@ -322,11 +320,11 @@
                     <div class="lg:w-6/12 w-full flex justify-center items-end">
                         <img class="max-w-[738px] w-full" src="./assets/image/webp/traits-sec-img.png" alt="traits-img">
                     </div>
-                    <div class="lg:w-6/12 w-full flex justify-center items-end flex-col">
-                        <div class="max-w-[950px] w-full px-[42px] py-[45px] backdrop-blur-35 rounded-[30px]">
-                            <h3 class="uppercase text-5xl xl:leading-[86%] lg:mb-[26px] mb-5">Traits</h3>
+                    <div class="lg:w-6/12 w-full flex justify-center items-end flex-col px-3">
+                        <div class="max-w-[950px] w-full lg:px-[42px] md:px-8 px-4 lg:py-[45px] md:py-8 py-4 backdrop-blur-35 border-[#598CB4] border rounded-[30px]">
+                            <h3 class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] max-lg:text-center font-godzilla text-white md:mb-5 mb-3">Traits</h3>
                             <div class="w-full bg-white bg-opacity-[20%] h-[1px]"></div>
-                            <div class="lg:mt-[26px] mt-5 flex lg:gap-[179px] mb-14">
+                            <div class="lg:mt-[26px] mt-5 flex lg:gap-[179px] max-lg:justify-between mb-14">
                                 <div class="text-white lg:text-[22px] text-base leading-primary">
                                     <p>Background:8</p>
                                     <p>Skins:19</p>
@@ -339,15 +337,15 @@
                                     <p>Accessories:7</p>
                                 </div>
                             </div>
-                            <h3 class="uppercase text-5xl xl:leading-[86%] lg:mb-[26px] mb-5">Stats</h3>
+                            <h3 class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] font-godzilla max-lg:text-center text-white md:mb-5 mb-3">Stats</h3>
                             <div class="w-full bg-white bg-opacity-[20%] h-[1px]"></div>
-                            <div class="lg:mt-[26px] mt-5 flex lg:gap-[179px] mb-14 text-white">
+                            <div class="lg:mt-[26px] mt-5 flex xl:gap-[179px] max-xl:justify-between lg:mb-14 mb-4 text-white">
                                 <div>
-                                    <h4 class="font-bold text-5xl leading-primary">9,999</h4>
+                                    <h4 class="font-bold lg:text-5xl text-4xl leading-primary">9,999</h4>
                                     <p class="lg:text-[22px] text-base leading-primary">Total Kaijuu</p>
                                 </div>
                                 <div>
-                                    <h4 class="flex gap-3 font-bold text-5xl leading-primary">0.0555 <img
+                                    <h4 class="flex gap-3 font-bold lg:text-5xl text-4xl leading-primary">0.0555 <img
                                             src="./assets/image/svg/ethereum-logo.svg" alt="ethereum-logo"></h4>
                                     <p class="lg:text-[22px] text-base leading-primary">Mint Cost</p>
                                 </div>
@@ -360,10 +358,10 @@
 
         <!-- ================================= Roadmap section ============================================= -->
         <section class="bg-dark-blue  lg:pt-[97px] lg:pb-[141px] -mt-1">
-            <div class="container">
+            <div class="container mx-auto max-w-[1320px] w-full">
                 <div class="flex justify-center items-center">
                     <h2
-                        class="text-customLg font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
+                        class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
                         Roadmap
                     </h2>
                 </div>
@@ -429,19 +427,55 @@
             </div>
         </section>
 
+        <!-- ================================= Team section ============================================= -->
+        <section class="bg-dark-blue">
+            <div
+                class="container !max-w-[1320px] mx-auto max-xl:px-4 xl:pt-[72px] lg:pt-16 pt-12 xl:pb-[123px] lg:pb-24 pb-16 relative">
+                <h2
+                    class="lg:text-7xl sm:text-6xl text-4xl font-bold text-primary lg:mb-14 md:mb-10 mb-7 font-godzilla text-center">
+                    TEAM
+                </h2>
+                <button class="slick-prev w-full max-w-[83px] translate-x-[-60px] lg:mt-[74px]">
+                    <img class="w-full" src="./assets/image//webp/slider-prev-btn.png" alt="Prev-btn">
+                </button>
+                <div class="card-slider">
+                    <div class="flex flex-col">
+                        <img src="./assets/image/webp/slider-img-1.png" alt="team-slider">
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="./assets/image/webp/slider-img-2.png" alt="team-slider">
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="./assets/image/webp/slider-img-2.png" alt="team-slider">
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="../assets/image/webp/slider-img-1.png" alt="team-slider">
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="./assets/image/webp/slider-img-2.png" alt="team-slider">
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="./assets/image/webp/slider-img-2.png" alt="team-slider">
+                    </div>
+                </div>
+                <button class="slick-next w-full max-w-[83px] translate-x-[60px] lg:mt-12">
+                    <img class="w-full" src="./assets/image/webp/slider-next-btn.png" alt="Next-btn">
+                </button>
+            </div>
+        </section>
 
-        <!-- ================================= FAQ and footer section ============================================= -->
+        <!-- ================================= FAQ and footer section ====================================== -->
         <section class="bg-water-bg-3 bg-cover -mt-1 pt-[106px] ">
-            <div class="container flex flex-col justify-center pb-[120px] items-center">
+            <div class="container flex flex-col justify-center px-3 mx-auto max-w-[1320px] w-full pb-[120px] items-center">
                 <div>
                     <h2
-                        class="text-customLg font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4">
+                        class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4">
                         FAQ<span class="text-white font-godzilla text-[40px]">s</span>
                     </h2>
                 </div>
                 <div class="max-w-[830px] w-full space-y-[17px]" id="accordion-container">
                     <!-- Accordion Item 1 -->
-                    <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient  border-custom-gradient-2 border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
+                    <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
                         onclick="toggleAccordion(this)">
                         <div class="flex justify-between text-white items-center font-bold lg:text-[22px] text-base">
                             <span>Volutpat gravida sapien in purus</span>
@@ -459,7 +493,7 @@
                     </div>
 
                     <!-- Accordion Item 2 -->
-                    <div class="accordion-item backdrop-blur-[35px] border-custom-gradient-2 border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
+                    <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
                         onclick="toggleAccordion(this)">
                         <div class="flex justify-between text-white items-center font-bold lg:text-[22px] text-base">
                             <span>Volutpat gravida sapien in purus</span>
@@ -477,7 +511,7 @@
                     </div>
 
                     <!-- Accordion Item 3 -->
-                    <div class="accordion-item backdrop-blur-[35px] border-custom-gradient-2 border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
+                    <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
                         onclick="toggleAccordion(this)">
                         <div class="flex justify-between text-white items-center font-bold lg:text-[22px] text-base">
                             <span>Volutpat gravida sapien in purus</span>
@@ -495,7 +529,7 @@
                     </div>
 
                     <!-- Accordion Item 4 -->
-                    <div class="accordion-item backdrop-blur-[35px] border-custom-gradient-2 border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
+                    <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
                         onclick="toggleAccordion(this)">
                         <div class="flex justify-between text-white items-center font-bold lg:text-[22px] text-base">
                             <span>Volutpat gravida sapien in purus</span>
@@ -513,23 +547,23 @@
                     </div>
                 </div>
             </div>
-            <div class="container flex flex-col justify-center pb-[60px] items-center">
+            <div class="container flex flex-col justify-center pb-[60px] mx-auto max-w-[1320px] w-full items-center">
                 <h2
-                    class="text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4">
+                    class="lg:text-4xl text-3xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4">
                     Kaijuu<span class="text-white font-godzilla">Crew</span>
                 </h2>
                 <div class="flex gap-[24px] max-h-[41px] lg:mb-7 md:mb-5 mb-4">
                     <a href="https://x.com/" target="_blank">
-                        <img class="max-w-[41px]" src="./assets/image/webp/twitter-logo.png" alt="twitter-icon">
+                        <img class="lg:max-w-[41px] md:max-w-9 max-w-7" src="./assets/image/webp/twitter-logo.png" alt="twitter-icon">
                     </a> <a href="https://discord.com/" target="_blank">
-                        <img class="max-w-[52px]" src="./assets/image/webp/discord-logo.png" alt="discord-icon">
+                        <img class="lg:max-w-[52px] md:max-w-10 max-w-8" src="./assets/image/webp/discord-logo.png" alt="discord-icon">
                     </a> <a href="https://www.instagram.com/" target="_blank">
-                        <img class="max-w-[41px]" src="./assets/image/webp/instagram-logo.png" alt="instagram-icon">
+                        <img class="lg:max-w-[41px] md:max-w-9 max-w-7" src="./assets/image/webp/instagram-logo.png" alt="instagram-icon">
                     </a> <a href="https://opensea.io/" target="_blank">
-                        <img class="max-w-[41px]" src="./assets/image/webp/open-sea.png" alt="open-sea-icon">
+                        <img class="lg:max-w-[41px] md:max-w-9 max-w-7" src="./assets/image/webp/open-sea.png" alt="open-sea-icon">
                     </a>
                 </div>
-                <p class="lg:text-[22px] text-base text-white">Copyright © Kaijuu Crew <span id="currentYear"></span>
+                <p class="lg:text-[22px] lg:text-base text-sm text-white">Copyright © Kaijuu Crew <span id="currentYear"></span>
                 </p>
             </div>
         </section>
