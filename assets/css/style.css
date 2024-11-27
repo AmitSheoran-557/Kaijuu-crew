@@ -25,6 +25,7 @@ fill: #FF002A !important;
     width: 83px;
     transform: translateX(-60px);
 }
+ 
 /* ================================== scroll right to left keyframe ======================================== */
    @keyframes scroll {
     0% {
@@ -47,9 +48,4 @@ animation-play-state: paused;
 .scroll-content img {
     flex-shrink: 0;  
     width: auto;  
-}
-
-
-option{
-    appearance:initial;
 }

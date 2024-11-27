@@ -104,6 +104,13 @@ $(".card-slider").slick({
     nextArrow: $(".slick-next"),
     responsive: [
         {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+        {
             breakpoint: 600,
             settings: {
                 slidesToShow: 1,
