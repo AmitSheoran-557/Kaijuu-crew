@@ -83,36 +83,41 @@
 <body>
     <main class="overflow-hidden relative max-w-[1920px] mx-auto">
 
-
         <!-- ================================= Hero section =============================================== -->
-        <section class=" bg-light-black" id="hero">
-            <div class="container px-3 mx-auto max-w-[1320px] w-full ">
-                <nav class="flex justify-between items-center xl:pt-[35px] lg:pt-7 pt-5  xl:pb-[26px] lg:pb-5 pb-4">
+        <section class="bg-light-black" id="hero">
+            <div class="container px-3 mx-auto max-w-[1320px] w-full max-h-max">
+                <nav class="flex justify-between items-center xl:pt-[35px] lg:pt-7 pt-5 xl:pb-[26px] lg:pb-5 pb-4">
                     <a href="/"><img src="./assets/image/svg/page-logo.svg" alt="header-logo"></a>
                     <div
-                        class="flex menulist justify-center lg:items-center items-end duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 backdrop-blur-[40px] bg-black bg-opacity-[80%] z-[100] lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
+                        class="flex menulist justify-center lg:items-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 backdrop-blur-[40px] bg-black bg-opacity-[80%] z-[100] lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
                         <div
-                            class="font-oswald xl:text-[13px] text-xl text-white lg:gap-[40px] gap-[37px] flex max-lg:flex-col max-lg:text-center">
+                            class="font-oswald xl:text-[22px] lg:text-xl text-sm text-white lg:gap-[40px] gap-[37px] flex max-lg:flex-col max-lg:text-center">
                             <a class="hover:text-primary duration-300 ease-linear" href="#about">About Us</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#story">Story</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#traits">Traits</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#roadmap">Roadmap</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#team">Team</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#faq">FAQ</a>
-                            <select class="bg-transparent max-w-max" name="" id="">
-                                <option class="flex max-w-max" value="">
-                                    <div>
-                                        <img class="max-w-10 w-full" src="./assets/image/svg/flag-img.svg"
-                                            alt="flag-img">
-                                        <p class="max-w-max">ENG</p>
-                                    </div>
-                                </option>
-                                <option value="">Hindi</option>
-                                <option value="">Japenese</option>
-                            </select>
+                            <div class="relative bg-transparent flex justify-center items-center ">
+                                <!-- Flag Image -->
+                                <img id="flag-img" class="w-[31px] rounded-full" src="./assets/image/webp/flag-img.png"
+                                    alt="Current Flag">
+
+                                <!-- Language Dropdown -->
+                                <select id="language-select"
+                                    class="block max-w-max px-[11px] focus:outline-none bg-transparent appearance-auto  cursor-pointer">
+                                    <option class="bg-primary first text-black" value="ENG"
+                                        data-flag="./assets/image/webp/flag-img.png">ENG</option>
+                                    <option class="bg-primary text-black" value="HINDI"
+                                        data-flag="https://static.vecteezy.com/system/resources/previews/011/571/519/original/circle-flag-of-india-free-png.png">
+                                        HIN</option>
+                                    <option class="bg-primary text-black" value="JAPNAESE"
+                                        data-flag="https://tse3.mm.bing.net/th?id=OIP.NLKpPgdmQ_yHm73BtHYF1QHaHa&pid=Api&P=0&h=220">
+                                        JAP</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-
                     <div id="menu-bar"
                         class="flex flex-col lg:hidden menubar text-end justify-between cursor-pointer z-[200] scroll-m-0  w-[32px] h-5 pt-[1px]">
                         <span
@@ -125,26 +130,25 @@
             </div>
             <div class="bg-hero-bg bg-cover bg-no-repeat">
                 <div
-                    class="container max-w-[1320px] w-full mx-auto flex flex-col justify-center items-center lg:mt-[55px] mt-12">
+                    class="container max-w-[1320px] w-full mx-auto flex flex-col justify-center items-center lg:pt-[55px] pt-12">
                     <div class="flex flex-wrap lg:mb-8 mb-6 w-full">
                         <div class="lg:w-6/12 w-full px-3 flex justify-center max-lg:items-center flex-col">
                             <h1
-                                class="2xl:text-customXl xl:text-9xl text-7xl max-sm:text-center  max-w-[400px] text-primary leading-[86%] lg:mb-[18px] font-godzilla mb-3">
+                                class="2xl:text-customXl xl:text-9xl text-7xl max-sm:text-center max-w-[400px] text-primary !leading-[86%] lg:mb-[18px] font-godzilla mb-3">
                                 Kaijuu
                                 <span class="text-white font-godzilla">Crew</span>
                             </h1>
-                            <p
-                                class="text-white lg:text-[22px] max-lg:text-center leading-normal md:text-base text-sm max-lg:px-4 lg:max-w-[320px] lg:mb-[18px] mb-3 text-left">
-                                The
-                                ocean surges with spray and foam,
-                                As Kaijuu rise from depth to roam.
-                                Thirty-three hundred, and thirty-three more,
-                                Decked in garbs from days of yore.
-                                We scour the earth and sea and air,
-                                Our mission so grave few would dare.
-                                In search of untold wealth to hoard?
-                                Nay, but 'cause your Apes are Bored.
-                            </p>
+                            <div
+                                class="text-white lg:text-[22px] max-lg:text-center !leading-[150%] md:text-base text-sm max-lg:px-4 lg:mb-[18px] mb-3 text-left">
+                                <p> The ocean surges with spray and foam, </p>
+                                <p> As Kaijuu rise from depth to roam.</p>
+                                <p>Thirty-three hundred, and thirty-three more,</p>
+                                <p>Decked in garbs from days of yore.</p>
+                                <p>We scour the earth and sea and air,</p>
+                                <p>Our mission so grave few would dare.</p>
+                                <p>In search of untold wealth to hoard?</p>
+                                <p>Nay, but 'cause your Apes are Bored.</p>
+                            </div>
                             <div id="timer"
                                 class="font-bold lg:text-5xl md:text-4xl text-2xl text-white leading-primary">
                                 10:20:15:10
@@ -176,23 +180,38 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="lg:w-6/12 w-full px-3 flex justify-center flex-col">
+                        <div class="lg:w-6/12 w-full px-3 flex justify-center max-lg:items-center flex-col">
                             <img class="max-w-[707px] max-lg:mt-3" src="./assets/image/webp/hero-section-img.png"
                                 alt="character-img">
                         </div>
                     </div>
-                    <div class="overflow-x-visible flex justify-center">
-                        <img class="max-w-[2169px]" src="./assets/image/webp/all-character-img.png" alt="character-img">
+                    <div class="overflow-x-visible flex justify-center w-full">
+                        <div class="scroll-content">
+                            <!-- First set of images -->
+                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.png"
+                                alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.png"
+                                alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.png"
+                                alt="character-img">
+                            <!-- Duplicate set of images for seamless scroll -->
+                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.png"
+                                alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.png"
+                                alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.png"
+                                alt="character-img">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ================================= About us section =========================================== -->
-        <section class="bg-dark-blue lg:pt-[61px] lg:pb-[135px] max-lg:py-12">
+        <section id="about" class="bg-dark-blue lg:pt-[61px] lg:pb-[135px] max-lg:py-12">
             <div class="container mx-auto max-w-[1320px] max-2xl:px-4">
                 <div class="flex flex-wrap justify-between w-full">
-                    <div class="xl:w-7/12 w-full max-xl:flex flex-col justify-center items-center">
+                    <div class="xl:w-7/12 w-full  flex flex-col justify-center max-xl:items-center">
                         <h2
                             class="lg:text-customLg md:text-5xl text-4xl max-w-[340px] text-primary font-godzilla leading-none xl:mb-[29px] lg:mb-6 mb-3">
                             ABOUT <span class="text-white font-godzilla">US</span>
@@ -213,27 +232,29 @@
                             unchanged.
                         </p>
                         <button
-                            class="flex justify-center items-center rounded-[7px] uppercase gap-[11px] font-bold lg:text-[18px] text-sm text-white leading-primary py-3 px-9 bg-primary max-w-[139px] w-full">
+                            class="flex justify-center max-w-max items-center hover:bg-white border-[2px] border-transparent hover:text-primary hover:border-primary duration-300 ease-linear rounded-[7px] uppercase gap-[11px] font-bold lg:text-[18px] text-sm text-white leading-primary py-3 px-9 bg-primary">
                             Mint NFT
                         </button>
                     </div>
                     <div class="xl:w-5/12 w-full flex justify-center items-end max-xl:mt-7">
-                        <img class="lg:max-w-[579px] max-w-[500px] w-full" src="./assets/image/webp/about-us-sec-img.png" alt="character-img">
+                        <img class="lg:max-w-[579px] max-w-[500px] w-full"
+                            src="./assets/image/webp/about-us-sec-img.png" alt="character-img">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ================================= Classes section ============================================ -->
-        <section class="bg-water-bg bg-cover lg:pt-[225px] pt-10 lg:pb-[171px] pb-24 -mt-1">
+        <section class="bg-water-bg bg-cover lg:pt-[200px] pt-10 xl:pb-[225px] lg:pb-[171px] pb-24 -mt-1">
             <div class="container mx-auto overflow-visible max-w-[1794px] flex flex-col justify-center items-center">
                 <div class="flex justify-center items-center">
                     <h2
-                        class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[85px] lg:mb-14 mb-7 uppercase">
+                        class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[80px] lg:mb-14 mb-7 uppercase">
                         Kaijuu <span class="text-white font-godzilla">Crew Classes</span>
                     </h2>
                 </div>
-                <div class="flex flex-wrap justify-center items-center xl:gap-[131px] lg:gap-28 md:gap-20 sm:gap-12 gap-8">
+                <div
+                    class="flex flex-wrap justify-center items-center xl:gap-[131px] lg:gap-28 md:gap-20 sm:gap-12 gap-8">
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
                         <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] md:mb-3 mb-1"
                             src="./assets/image/webp/scout-img.png" alt="scout-img">
@@ -280,16 +301,16 @@
         </section>
 
         <!-- ================================= Story section ============================================== -->
-        <section class="bg-dark-blue lg:pt-[61px] lg:pb-[135px] max-lg:py-12 -mt-1">
+        <section id="story" class="bg-dark-blue bg-cover lg:pt-[70px] lg:pb-[95px] max-lg:py-12 -mt-2">
             <div class="container mx-auto max-w-[1320px]">
                 <div class="flex flex-wrap max-lg:flex-col-reverse justify-between">
-                    <div class="lg:w-6/12 w-full flex justify-center items-end">
+                    <div class="lg:w-6/12 w-full flex max-lg:justify-center items-start">
                         <img class="max-w-[619px] w-full" src="./assets/image/webp/story-sec-img.png"
                             alt="character-img">
                     </div>
-                    <div class="lg:w-6/12 w-full flex justify-center flex-col items-center">
+                    <div class="lg:w-6/12 w-full flex justify-center flex-col max-lg:items-center xl:pt-5">
                         <h2
-                            class="tlg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary  leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
+                            class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary  leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
                             story
                         </h2>
                         <p
@@ -308,7 +329,7 @@
         </section>
 
         <!-- ================================= Traits section ============================================= -->
-        <section class="bg-water-bg-2 bg-cover  lg:pt-[97px] lg:pb-[141px] max-lg:py-12 -mt-1">
+        <section id="traits" class="bg-water-bg-2 bg-cover  lg:pt-[97px] lg:pb-[156px] max-lg:py-12 -mt-1">
             <div class="container">
                 <div class="flex justify-center items-center">
                     <h2
@@ -318,11 +339,15 @@
                 </div>
                 <div class="flex flex-wrap justify-between">
                     <div class="lg:w-6/12 w-full flex justify-center items-end">
-                        <img class="max-w-[738px] w-full" src="./assets/image/webp/traits-sec-img.png" alt="traits-img">
+                        <img class="max-w-[738px] max-xl:w-full" src="./assets/image/webp/traits-sec-img.png"
+                            alt="traits-img">
                     </div>
                     <div class="lg:w-6/12 w-full flex justify-center items-end flex-col px-3">
-                        <div class="max-w-[950px] w-full lg:px-[42px] md:px-8 px-4 lg:py-[45px] md:py-8 py-4 backdrop-blur-35 border-[#598CB4] border rounded-[30px]">
-                            <h3 class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] max-lg:text-center font-godzilla text-white md:mb-5 mb-3">Traits</h3>
+                        <div
+                            class="max-w-[590px] xl:max-h-[565px] w-full lg:px-[42px] md:px-8 px-4 lg:py-[45px] md:py-8 py-4 backdrop-blur-35 border-[#598CB4] border rounded-[30px]">
+                            <h3
+                                class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] max-lg:text-center font-godzilla text-white md:mb-5 mb-3">
+                                Traits</h3>
                             <div class="w-full bg-white bg-opacity-[20%] h-[1px]"></div>
                             <div class="lg:mt-[26px] mt-5 flex lg:gap-[179px] max-lg:justify-between mb-14">
                                 <div class="text-white lg:text-[22px] text-base leading-primary">
@@ -337,9 +362,11 @@
                                     <p>Accessories:7</p>
                                 </div>
                             </div>
-                            <h3 class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] font-godzilla max-lg:text-center text-white md:mb-5 mb-3">Stats</h3>
+                            <h3
+                                class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] font-godzilla max-lg:text-center text-white md:mb-5 mb-3">
+                                Stats</h3>
                             <div class="w-full bg-white bg-opacity-[20%] h-[1px]"></div>
-                            <div class="lg:mt-[26px] mt-5 flex xl:gap-[179px] max-xl:justify-between lg:mb-14 mb-4 text-white">
+                            <div class="lg:mt-[26px] mt-5 flex xl:gap-[179px] max-xl:justify-between text-white">
                                 <div>
                                     <h4 class="font-bold lg:text-5xl text-4xl leading-primary">9,999</h4>
                                     <p class="lg:text-[22px] text-base leading-primary">Total Kaijuu</p>
@@ -357,70 +384,170 @@
         </section>
 
         <!-- ================================= Roadmap section ============================================= -->
-        <section class="bg-dark-blue  lg:pt-[97px] lg:pb-[141px] -mt-1">
-            <div class="container mx-auto max-w-[1320px] w-full">
-                <div class="flex justify-center items-center">
-                    <h2
-                        class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4 uppercase">
-                        Roadmap
-                    </h2>
+        <section id="roadmap" class="bg-dark-blue lg:min-h-[1024px] lg:pt-[74px] lg:pb-[186px] -mt-1">
+            <div class="container mx-auto max-w-[1320px] flex justify-center items-center w-full flex-col">
+                <h2
+                    class="text-center font-godzilla xl:mb-[45px] lg:mb-7 mb-5 text-primary lg:text-customLg md:text-5xl text-4xl font-normal leading-[86.7%]">
+                    RoadMap</h2>
+                <div class="w-full max-w-[1320px] relative flex max-xl:hidden">
+                    <div class="w-full">
+                        <ul class="py-10">
+                            <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Ut eu ac sed duis
+                                nec amet.</li>
+                            <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Sed elementum a
+                                tortor eros.</li>
+                        </ul>
+                        <div
+                            class="mt-5 relative bg-[url('assets/image/webp/red-ring-img.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] flex items-center justify-center">
+                            <img src=" assets/image/webp/white-shade-line-up.png" alt="white-line"
+                                class="absolute top-[-36px] translate-x-1">
+                            <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-1</h2>
+                            <img src="assets/image/webp/red-line-left.png" alt="red-line"
+                                class="absolute right-[-55px] bottom-[-6px]">
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="absolute bg-[url('assets/image/webp/red-ring-img.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] top-[-66px] flex items-center justify-center left-[252px]">
+                                <img src=" assets/image/webp/white-shade-line-down.png" alt="line"
+                                    class="absolute bottom-[-34px] translate-x-1">
+                                <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-2</h2>
+                                <img src="assets/image/webp/red-line-right.png" alt="red-line"
+                                    class="absolute top-0 right-[-51px]">
+
+                            </div>
+                            <ul class="absolute xl:bottom-[-318px] -bottom-96 translate-x-[295px] w-full">
+                                <li class="text-white list-disc text-[22px] xl:w-[370px] font-normal leading-[150%]">Sagittis
+                                    tristique molestie eupharetra.</li>
+                                <li class="text-white list-disc text-[22px] xl:w-[367px] font-normal leading-[150%]">Nibh convallis
+                                    ornare fringilla diam proin volutpat aliquet nunc.</li>
+                            </ul>
+                        </div>
+                        <div class="relative">
+                            <ul class="absolute top-[-370px] translate-x-[495px]  w-[358px]">
+                                <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Adipiscing velit
+                                    turpis pretium, tellus.</li>
+                                <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Ornare urna
+                                    arcu, dolor vestibulum.</li>
+                            </ul>
+                            <div
+                                class="absolute bg-[url('assets/image/webp/red-ring-img.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] top-[-238px] left-[500px] flex items-center justify-center">
+                                <img src=" assets/image/webp/white-shade-line-up.png" alt="line"
+                                    class="absolute top-[-34px] translate-x-1">
+                                <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-3</h2>
+                                <img src="assets/image/webp/red-line-left.png" alt="red-line"
+                                    class="absolute bottom-0 right-[-54px]">
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="absolute bg-[url('assets/image/webp/red-ring-img.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] bottom-[-183px] left-[746px] flex items-center justify-center">
+                                <img src=" assets/image/webp/white-shade-line-down.png" alt="line"
+                                    class="absolute bottom-[-34px] translate-x-1">
+                                <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-4</h2>
+                                <img src="assets/image/webp/red-line-right.png" alt="red-line"
+                                    class="absolute top-0 right-[-54px]">
+
+                            </div>
+                            <ul class="absolute xl:bottom-[-318px] -bottom-[420px] translate-x-[795px] xl:w-[458px]">
+                                <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Eget imperdiet
+                                    mauris interdum ut egestas lacinia lacus.</li>
+                                <li class="text-white list-disc text-[22px] max-w-[358px] font-normal leading-[150%]">Non ipsum,
+                                    cursus consectetur fringilla aliquam.</li>
+                            </ul>
+                        </div>
+                        <div class="relative">
+                            <ul class="absolute top-[-370px] translate-x-[995px] w-[358px]">
+                                <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Elementum
+                                    elementum sit mauris amet non.</li>
+                            </ul>
+                            <div
+                                class="absolute bg-[url('assets/image/webp/red-ring-img.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] top-[-230px] left-[997px] flex items-center justify-center">
+                                <img src=" assets/image/webp/white-shade-line-up.png" alt="line"
+                                    class="absolute top-[-34px] translate-x-1">
+                                <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-5</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-wrap lg:flex-nowrap items-center justify-center w-full h-auto relative">
-                    <!-- Connecting Line -->
-                    <div class="hidden lg:block absolute top-1/2 w-full border-t-2 border-gray-700 -translate-y-1/2">
-                    </div>
-
-                    <!-- Event 1 -->
-                    <div class="relative flex flex-col items-center text-center w-full lg:w-[150px] mb-10 lg:mb-0">
-                        <div class="text-[22px]">
-                            <p class="text-white font-bold">Ut eu ac sed duis nec amet.</p>
-                            <p class="text-white font-bold">Sed elementum a tortor eros..</p>
-                        </div>
-                        <div class="bg-gray-800 p-3 mt-3 rounded-lg shadow-md">
-                            <p class="text-sm">Event One</p>
-                        </div>
-                    </div>
-
-                    <!-- Spacer -->
-                    <div class="hidden lg:block w-[100px]"></div>
-
-                    <!-- Event 2 -->
-                    <div
-                        class="relative flex flex-col items-center text-center w-full lg:w-[150px] mb-10 lg:mb-0 lg:mt-[40px]">
+                <div class="flex items-center justify-center flex-col gap-3 xl:hidden">
+                    <div class="flex items-center gap-[55px] max-sm:gap-7">
                         <div
-                            class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center border-4 border-gray-900">
-                            <span class="text-white font-bold">2</span>
+                            class="felx items-center bg-[url('assets/image/webp/red-ring-img.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+                            <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-1</h2>
                         </div>
-                        <div class="bg-gray-800 p-3 mt-3 rounded-lg shadow-md">
-                            <p class="text-sm">Event Two</p>
-                        </div>
-                    </div>
-
-                    <!-- Spacer -->
-                    <div class="hidden lg:block w-[100px]"></div>
-
-                    <!-- Event 3 -->
-                    <div class="relative flex flex-col items-center text-center w-full lg:w-[150px] mb-10 lg:mb-0">
-                        <div
-                            class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center border-4 border-gray-900">
-                            <span class="text-white font-bold">3</span>
-                        </div>
-                        <div class="bg-gray-800 p-3 mt-3 rounded-lg shadow-md">
-                            <p class="text-sm">Event Three</p>
+                        <div class="">
+                            <ul>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Ut eu ac sed duis nec amet.</li>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Sed elementum a tortor eros.</li>
+                            </ul>
                         </div>
                     </div>
-
-                    <!-- Spacer -->
-                    <div class="hidden lg:block w-[100px]"></div>
-
-                    <!-- Event 4 -->
-                    <div class="relative flex flex-col items-center text-center w-full lg:w-[150px] lg:mt-[40px]">
+                    <div class="flex items-center gap-[55px] max-sm:gap-7 ">
                         <div
-                            class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center border-4 border-gray-900">
-                            <span class="text-white font-bold">4</span>
+                            class="felx items-center bg-[url('assets/image/webp/red-ring-img.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+                            <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-2</h2>
                         </div>
-                        <div class="bg-gray-800 p-3 mt-3 rounded-lg shadow-md">
-                            <p class="text-sm">Event Four</p>
+                        <div class="">
+                            <ul>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Ut eu ac sed duis nec amet.</li>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Sed elementum a tortor eros.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[55px] max-sm:gap-7 ">
+                        <div
+                            class="felx items-center bg-[url('assets/image/webp/red-ring-img.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+                            <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-3</h2>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Ut eu ac sed duis nec amet.</li>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Sed elementum a tortor eros.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[55px] max-sm:gap-7 ">
+                        <div
+                            class="felx items-center bg-[url('assets/image/webp/red-ring-img.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+                            <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-4</h2>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Ut eu ac sed duis nec amet.</li>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Sed elementum a tortor eros.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[55px] max-sm:gap-7 ">
+                        <div
+                            class="felx items-center bg-[url('assets/image/webp/red-ring-img.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+                            <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-5</h2>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Ut eu ac sed duis nec amet.</li>
+                                <li
+                                    class="text-white list-disc text-[22px] font-normal leading-[150%] max-sm:text-base">
+                                    Sed elementum a tortor eros.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -428,14 +555,14 @@
         </section>
 
         <!-- ================================= Team section ============================================= -->
-        <section class="bg-dark-blue">
+        <section id="team" class="bg-dark-blue pt-[72px] pb-[123px] -mt-1">
             <div
                 class="container !max-w-[1320px] mx-auto max-xl:px-4 xl:pt-[72px] lg:pt-16 pt-12 xl:pb-[123px] lg:pb-24 pb-16 relative">
                 <h2
                     class="lg:text-7xl sm:text-6xl text-4xl font-bold text-primary lg:mb-14 md:mb-10 mb-7 font-godzilla text-center">
                     TEAM
                 </h2>
-                <button class="slick-prev w-full max-w-[83px] translate-x-[-60px] lg:mt-[74px]">
+                <button class="slick-prev w-full max-w-[83px] translate-x-[-60px] lg:mt-[70px]">
                     <img class="w-full" src="./assets/image//webp/slider-prev-btn.png" alt="Prev-btn">
                 </button>
                 <div class="card-slider">
@@ -465,8 +592,9 @@
         </section>
 
         <!-- ================================= FAQ and footer section ====================================== -->
-        <section class="bg-water-bg-3 bg-cover -mt-1 pt-[106px] ">
-            <div class="container flex flex-col justify-center px-3 mx-auto max-w-[1320px] w-full pb-[120px] items-center">
+        <section id="faq" class="bg-water-bg-3 bg-cover -mt-1 pt-[106px] ">
+            <div
+                class="container flex flex-col justify-center px-3 mx-auto max-w-[1320px] w-full pb-[120px] items-center">
                 <div>
                     <h2
                         class="lg:text-customLg md:text-5xl text-4xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4">
@@ -554,16 +682,21 @@
                 </h2>
                 <div class="flex gap-[24px] max-h-[41px] lg:mb-7 md:mb-5 mb-4">
                     <a href="https://x.com/" target="_blank">
-                        <img class="lg:max-w-[41px] md:max-w-9 max-w-7" src="./assets/image/webp/twitter-logo.png" alt="twitter-icon">
+                        <img class="hover:scale-[1.09] duration-300 ease-linear lg:max-w-[41px] md:max-w-9 max-w-7"
+                            src="./assets/image/webp/twitter-logo.png" alt="twitter-icon">
                     </a> <a href="https://discord.com/" target="_blank">
-                        <img class="lg:max-w-[52px] md:max-w-10 max-w-8" src="./assets/image/webp/discord-logo.png" alt="discord-icon">
+                        <img class="hover:scale-[1.09] duration-300 ease-linear lg:max-w-[52px] md:max-w-10 max-w-8"
+                            src="./assets/image/webp/discord-logo.png" alt="discord-icon">
                     </a> <a href="https://www.instagram.com/" target="_blank">
-                        <img class="lg:max-w-[41px] md:max-w-9 max-w-7" src="./assets/image/webp/instagram-logo.png" alt="instagram-icon">
+                        <img class="hover:scale-[1.09] duration-300 ease-linear lg:max-w-[41px] md:max-w-9 max-w-7"
+                            src="./assets/image/webp/instagram-logo.png" alt="instagram-icon">
                     </a> <a href="https://opensea.io/" target="_blank">
-                        <img class="lg:max-w-[41px] md:max-w-9 max-w-7" src="./assets/image/webp/open-sea.png" alt="open-sea-icon">
+                        <img class="hover:scale-[1.09] duration-300 ease-linear lg:max-w-[41px] md:max-w-9 max-w-7"
+                            src="./assets/image/webp/open-sea.png" alt="open-sea-icon">
                     </a>
                 </div>
-                <p class="lg:text-[22px] lg:text-base text-sm text-white">Copyright © Kaijuu Crew <span id="currentYear"></span>
+                <p class="lg:text-[22px] lg:text-base text-sm text-white">Copyright © Kaijuu Crew <span
+                        id="currentYear"></span>
                 </p>
             </div>
         </section>

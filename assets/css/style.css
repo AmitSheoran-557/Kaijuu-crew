@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/godzilla');
 *{
     font-family:"Oswald", sans-serif;
+    scroll-behavior: smooth;
 }
 .leading-primary{
     line-height: 150% !important;
@@ -23,4 +24,32 @@ fill: #FF002A !important;
 .slick-prev{
     width: 83px;
     transform: translateX(-60px);
+}
+/* ================================== scroll right to left keyframe ======================================== */
+   @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-content {
+    display: flex;
+    width: 200%;  
+    animation: scroll 20s linear infinite;
+}
+.scroll-content:hover{
+animation-play-state: paused;
+}
+
+.scroll-content img {
+    flex-shrink: 0;  
+    width: auto;  
+}
+
+
+option{
+    appearance:initial;
 }

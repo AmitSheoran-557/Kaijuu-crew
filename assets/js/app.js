@@ -30,8 +30,8 @@ menuItems.forEach(item => {
 });
 
 // ==================================== Timer js  ==============================================================
-let totalSeconds = (10 * 24 * 3600) + (20 * 3600) + (15 * 60) + 10;
-
+const initialTotalSeconds = (10 * 24 * 3600) + (20 * 3600) + (15 * 60) + 10;
+let totalSeconds = parseInt(localStorage.getItem('remainingSeconds')) || initialTotalSeconds;
 function formatTime(seconds) {
     const days = Math.floor(seconds / (24 * 3600));
     seconds %= 24 * 3600;
@@ -41,14 +41,17 @@ function formatTime(seconds) {
     const secs = seconds % 60;
     return `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 }
+
 function updateTimer() {
     const timerElement = document.getElementById('timer');
     if (totalSeconds > 0) {
         timerElement.textContent = formatTime(totalSeconds);
         totalSeconds--;
+        localStorage.setItem('remainingSeconds', totalSeconds);
     } else {
         timerElement.textContent = "Time's Up!";
         clearInterval(timerInterval);
+        localStorage.removeItem('remainingSeconds');
     }
 }
 const timerInterval = setInterval(updateTimer, 1000);
@@ -108,4 +111,14 @@ $(".card-slider").slick({
             },
         },
     ],
+});
+// =============================== language select js =============================
+const flagImg = document.getElementById('flag-img');
+const languageSelect = document.getElementById('language-select');
+
+languageSelect.addEventListener('change', (event) => {
+    const selectedOption = event.target.selectedOptions[0];
+
+    const newFlag = selectedOption.getAttribute('data-flag');
+    flagImg.src = newFlag;
 });
