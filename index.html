@@ -83,18 +83,18 @@
     </script>
 </head>
 
-<body>
-    <main class="overflow-hidden relative max-w-[1920px] mx-auto">
+<body class="bg-dark-blue">
+    <main class="overflow-hidden relative  mx-auto">
 
         <!-- ================================= Hero section =============================================== -->
-        <section class="bg-light-black" id="hero">
-            <div class="container px-3 mx-auto max-w-[1320px] w-full max-h-max">
+        <section class=" bg-light-black" id="hero">
+            <div class="container max-2xl:px-4 px-3 mx-auto max-w-[1320px] w-full max-h-max">
                 <nav class="flex justify-between items-center xl:pt-[35px] lg:pt-7 pt-5 xl:pb-[26px] lg:pb-5 pb-4">
                     <a href="/"><img src="./assets/image/svg/page-logo.svg" alt="header-logo"></a>
                     <div
                         class="flex menulist justify-center lg:items-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 backdrop-blur-[40px] bg-black bg-opacity-[80%] z-[100] lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
                         <div
-                            class="font-oswald xl:text-[22px] lg:text-xl text-sm text-white lg:gap-[40px] gap-6 flex max-lg:flex-col max-lg:text-center">
+                            class="font-oswald xl:text-[22px] text-xl text-white xl:gap-[53px] lg:gap-[40px] gap-6 flex max-lg:flex-col max-lg:text-center">
                             <a class="hover:text-primary duration-300 ease-linear" href="#about">About Us</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#story">Story</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#traits">Traits</a>
@@ -109,12 +109,12 @@
                                 <!-- Language Dropdown -->
                                 <select id="language-select"
                                     class="block max-w-max px-[11px] focus:outline-none bg-transparent appearance-auto  cursor-pointer">
-                                    <option class="bg-primary first text-black" value="ENG"
+                                    <option class="bg-primary first text-black cursor-pointer" value="ENG"
                                         data-flag="./assets/image/webp/flag-img.webp">ENG</option>
-                                    <option class="bg-primary text-black" value="HINDI"
+                                    <option class="bg-primary text-black cursor-pointer" value="HINDI"
                                         data-flag="https://static.vecteezy.com/system/resources/previews/011/571/519/original/circle-flag-of-india-free-png.png">
                                         HIN</option>
-                                    <option class="bg-primary text-black" value="JAPNAESE"
+                                    <option class="bg-primary text-black cursor-pointer" value="JAPNAESE"
                                         data-flag="https://tse3.mm.bing.net/th?id=OIP.NLKpPgdmQ_yHm73BtHYF1QHaHa&pid=Api&P=0&h=220">
                                         JAP</option>
                                 </select>
@@ -131,7 +131,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="bg-hero-bg bg-cover bg-no-repeat">
+            <div class="bg-hero-bg max-2xl:px-4 bg-cover bg-no-repeat">
                 <div
                     class="container max-w-[1320px] w-full mx-auto flex flex-col justify-center items-center lg:pt-[55px] pt-12">
                     <div class="flex flex-wrap lg:mb-8 mb-6 w-full">
@@ -160,8 +160,8 @@
                                 class="text-white opacity-[60%] lg:text-[18px] text-sm leading-primary lg:mb-[18px] mb-3">
                                 Days left</p>
                             <div class="flex items-center gap-4">
-                                <button
-                                    class="flex discord-svg justify-center items-center hover:bg-white border-[2px] border-transparent hover:text-primary hover:border-primary duration-300 ease-linear rounded-[7px] uppercase gap-[11px] font-bold xl:text-[18px] lg:text-base text-xs text-white leading-primary lg:py-[13px] py-2 lg:px-[52.5px] px-7 bg-primary">
+                                <a href="https://discord.com/" target="_blank"
+                                    class="flex discord-svg justify-center items-center hover:bg-white border-[2px] border-transparent hover:text-primary hover:border-primary duration-300 ease-linear rounded-[7px] uppercase gap-[11px] font-bold xl:text-[18px] lg:text-base text-xs text-white leading-primary lg:py-[10.5px] md:py-2 py-1 xl:px-[35px] lg:px-7 px-4 bg-primary">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_67_195)">
@@ -176,34 +176,35 @@
                                         </defs>
                                     </svg>
                                     <p class="flex-nowrap">join discord</p>
-                                </button>
-                                <button
-                                    class="rounded-[7px] uppercase font-bold xl:text-[18px] lg:text-base hover:bg-white border-[2px] border-transparent hover:text-primary hover:border-primary duration-300 ease-linear text-xs text-white leading-primary lg:py-[15px] py-[10px] lg:px-[55.5px] px-7 bg-primary">
+                                    </button>
+                                </a>
+                              <a href="https://discord.com/" target="_blank"
+                                    class="rounded-[7px] uppercase font-bold xl:text-[18px] lg:text-base hover:bg-white border-[2px] border-transparent hover:text-primary hover:border-primary duration-300 ease-linear text-xs text-white leading-primary lg:py-[10.5px] md:py-[10px] py-1.5 xl:px-[35px] lg:px-7 px-5 bg-primary">
                                     Connect Wallet
-                                </button>
+                                 </a>
                             </div>
                         </div>
                         <div class="lg:w-6/12 w-full px-3 flex justify-center max-lg:items-center flex-col">
-                            <img class="max-w-[707px] max-lg:mt-3 xl:w-[112%] max-xl:w-full" src="./assets/image/webp/hero-section-img.webp"
-                                alt="character-img">
+                            <img class="max-w-[707px] max-lg:mt-3 xl:w-[112%] max-xl:w-full"
+                                src="./assets/image/webp/hero-section-img.webp" alt="character-img">
                         </div>
                     </div>
                     <div class="overflow-x-visible flex justify-center w-full">
                         <div class="scroll-content">
                             <!-- First set of images -->
-                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.webp"
-                                alt="character-img">
-                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.webp"
-                                alt="character-img">
-                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.webp"
-                                alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]"
+                                src="./assets/image/webp/all-character-img.webp" alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]"
+                                src="./assets/image/webp/all-character-img.webp" alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]"
+                                src="./assets/image/webp/all-character-img.webp" alt="character-img">
                             <!-- Duplicate set of images for seamless scroll -->
-                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.webp"
-                                alt="character-img">
-                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.webp"
-                                alt="character-img">
-                            <img class="max-w-[2169px] max-lg:h-[200px]" src="./assets/image/webp/all-character-img.webp"
-                                alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]"
+                                src="./assets/image/webp/all-character-img.webp" alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]"
+                                src="./assets/image/webp/all-character-img.webp" alt="character-img">
+                            <img class="max-w-[2169px] max-lg:h-[200px]"
+                                src="./assets/image/webp/all-character-img.webp" alt="character-img">
                         </div>
                     </div>
                 </div>
@@ -211,7 +212,7 @@
         </section>
 
         <!-- ================================= About us section =========================================== -->
-        <section id="about" class="bg-dark-blue lg:pt-[61px] xl:pb-[135px] pb-20 max-lg:py-12">
+        <section id="about" class="max-2xl:px-4 bg-dark-blue lg:pt-[61px] xl:pb-[135px] pb-20 max-lg:py-12">
             <div class="container mx-auto max-w-[1320px] max-2xl:px-4">
                 <div class="flex flex-wrap justify-between w-full">
                     <div class="xl:w-7/12 w-full  flex flex-col justify-center max-xl:items-center">
@@ -248,7 +249,8 @@
         </section>
 
         <!-- ================================= Classes section ============================================ -->
-        <section class="bg-water-bg bg-cover 2xl:pt-[200px] xl:pt-24 lg:pt-16 pt-10 2xl:pb-[225px] xl:pb-44 lg:pb-16 pb-14 -mt-1">
+        <section
+            class="max-2xl:px-4 bg-water-bg bg-cover 2xl:pt-[200px] xl:pt-24 lg:pt-16 pt-10 2xl:pb-[225px] xl:pb-44 lg:pb-16 pb-14 -mt-1">
             <div class="container mx-auto overflow-visible max-w-[1794px] flex flex-col justify-center items-center">
                 <div class="flex justify-center items-center">
                     <h2
@@ -257,44 +259,39 @@
                     </h2>
                 </div>
                 <div
-                    class="flex flex-wrap justify-center items-center xl:gap-[131px] lg:gap-28 md:gap-12 sm:gap-10 gap-7">
+                    class="flex flex-wrap justify-center items-center 2xl:gap-[131px] xl:gap-20 lg:gap-16 md:gap-12 sm:gap-10 gap-7">
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
                         <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-1"
                             src="./assets/image/webp/scout-img.webp" alt="scout-img">
-                        <p
-                            class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
+                        <p class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
                             Scouts
                         </p>
                     </div>
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
                         <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-1"
                             src="./assets/image/webp/heavies-img.webp" alt="heavies-img">
-                        <p
-                            class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
+                        <p class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
                             Heavies
                         </p>
                     </div>
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
                         <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-1"
                             src="./assets/image/webp/questionmark-img.webp" alt="questionmark-img">
-                        <p
-                            class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
+                        <p class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
                             Legends
                         </p>
                     </div>
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden ">
                         <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-1"
                             src="./assets/image/webp/elementals-img.webp" alt="elementals-img">
-                        <p
-                            class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
+                        <p class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
                             Elementals
                         </p>
                     </div>
                     <div class="max-w-max w-full flex justify-center flex-col items-center overflow-hidden">
                         <img class="max-w-[254px] rounded-[20px] lg:mb-[18px] mb-1"
                             src="./assets/image/webp/questionmark-img.webp" alt="questionmark-img">
-                        <p
-                            class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
+                        <p class="font-semibold xl:text-4xl lg:text-3xl text-xl text-white leading-primary text-center">
                             ???
                         </p>
                     </div>
@@ -304,7 +301,8 @@
         </section>
 
         <!-- ================================= Story section ============================================== -->
-        <section id="story" class="bg-dark-blue bg-cover lg:pt-[70px] 2xl:pb-[95px] xl:pb-20 lg:pb-14 max-lg:py-12 -mt-2">
+        <section id="story"
+            class="max-2xl:px-4 bg-dark-blue bg-cover lg:pt-[70px] 2xl:pb-[95px] xl:pb-20 lg:pb-14 max-lg:py-12 -mt-2">
             <div class="container mx-auto max-w-[1320px]">
                 <div class="flex flex-wrap max-lg:flex-col-reverse justify-between">
                     <div class="lg:w-6/12 w-full flex max-lg:justify-center items-start">
@@ -317,7 +315,7 @@
                             story
                         </h2>
                         <p
-                            class="text-white lg:text-[22px] leading-primary max-lg:text-center md:text-base max-lg:px-4 text-sm lg:max-w-[640px] xl:mb-[34px] lg:mb-7 mb-5 text-left">
+                            class="text-white lg:text-[22px] max-xl:px-3 leading-primary max-lg:text-center md:text-base max-lg:px-4 text-sm lg:max-w-[640px] xl:mb-[34px] lg:mb-7 mb-5 text-left">
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                             passages, and more recently with desktop publishing software like Aldus PageMaker including
                             versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -332,7 +330,7 @@
         </section>
 
         <!-- ================================= Traits section ============================================= -->
-        <section id="traits" class="bg-water-bg-2 bg-cover lg:pt-[97px] xl:pb-[156px] lg:pb-28 max-lg:py-12 -mt-1">
+        <section id="traits" class="max-2xl:px-4 bg-water-bg-2 bg-cover lg:pt-[97px] xl:pb-[156px] lg:pb-28 max-lg:py-12 -mt-1">
             <div class="container">
                 <div class="flex justify-center items-center">
                     <h2
@@ -341,15 +339,15 @@
                     </h2>
                 </div>
                 <div class="flex flex-wrap justify-between">
-                    <div class="lg:w-6/12 w-full flex justify-center items-end">
-                        <img class="max-w-[738px] max-xl:w-full" src="./assets/image/webp/traits-sec-img.webp"
+                    <div class="lg:w-6/12 w-full flex justify-center 2xl:items-end items-center">
+                        <img class="2xl:max-w-[738px] max-w-xl max-xl:w-full" src="./assets/image/webp/traits-sec-img.webp"
                             alt="traits-img">
                     </div>
                     <div class="lg:w-6/12 w-full flex justify-center lg:items-end items-center flex-col px-3">
                         <div
                             class="max-w-[590px] xl:max-h-[565px] w-full lg:px-[42px] md:px-8 px-4 lg:py-[45px] md:py-8 py-4 backdrop-blur-35 border-[#598CB4] border rounded-[30px]">
                             <h3
-                                class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] max-lg:text-center font-godzilla text-white md:mb-5 mb-3">
+                                class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] font-godzilla text-white md:mb-5 mb-3">
                                 Traits</h3>
                             <div class="w-full bg-white bg-opacity-[20%] h-[1px]"></div>
                             <div class="lg:mt-[26px] mt-5 flex lg:gap-[179px] max-lg:justify-between mb-14">
@@ -366,7 +364,7 @@
                                 </div>
                             </div>
                             <h3
-                                class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] font-godzilla max-lg:text-center text-white md:mb-5 mb-3">
+                                class="uppercase lg:text-5xl text-4xl xl:leading-[86%] lg:mb-[26px] font-godzilla text-white md:mb-5 mb-3">
                                 Stats</h3>
                             <div class="w-full bg-white bg-opacity-[20%] h-[1px]"></div>
                             <div class="lg:mt-[26px] mt-5 flex xl:gap-[179px] max-xl:justify-between text-white">
@@ -387,7 +385,7 @@
         </section>
 
         <!-- ================================= Roadmap section ============================================= -->
-        <section id="roadmap" class="bg-dark-blue lg:min-h-[1024px] lg:pt-[74px] pt-7 lg:pb-2 pb-7 -mt-1">
+        <section id="roadmap" class="bg-dark-blue lg:min-h-[1024px] lg:pt-[74px] md:pt-12 pt-10 lg:pb-2 pb-7 -mt-1">
             <div class="container mx-auto max-w-[1320px] flex justify-center items-center w-full flex-col">
                 <h2
                     class="text-center font-godzilla xl:mb-[45px] lg:mb-7 mb-5 text-primary lg:text-customLg md:text-5xl text-4xl font-normal leading-[86.7%]">
@@ -397,21 +395,22 @@
                         <ul class="py-8">
                             <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Ut eu ac sed duis
                                 nec amet.</li>
-                                <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Sed elementum a
-                                    tortor eros.</li>
-                                </ul>
-                                <div
-                                class="mt-5 relative bg-[url('assets/image/webp/red-ring-img.webp')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] flex items-center justify-center">
-                                <img src=" assets/image/webp/white-shade-line-up.webp" alt="white-line"
+                            <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Sed elementum a
+                                tortor eros.</li>
+                        </ul>
+                        <div
+                            class="mt-5 relative bg-[url('assets/image/webp/red-ring-img.webp')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] flex items-center justify-center">
+                            <img src=" assets/image/webp/white-shade-line-up.webp" alt="white-line"
                                 class="absolute top-[-36px] translate-x-1">
-                                <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-1</h2>
-                                <img src="assets/image/webp/red-line-left.webp" alt="red-line"
+                            <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-1</h2>
+                            <img src="assets/image/webp/red-line-left.webp" alt="red-line"
                                 class="absolute right-[-55px] bottom-[-6px]">
-                            </div>
-                            <div class="relative">
-                                <div
+                        </div>
+                        <div class="relative">
+                            <div
                                 class="absolute bg-[url('assets/image/webp/red-ring-img.webp')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] top-[-66px] flex items-center justify-center left-[252px]">
-                                <img class="pointer-events-none absolute -top-36 max-w-[334px] pl-2" src="./assets/image/webp/white-ring-img.png" alt="white-ring-img">
+                                <img class="pointer-events-none absolute -top-36 max-w-[334px] pl-2"
+                                    src="./assets/image/webp/white-ring-img.png" alt="white-ring-img">
                                 <img src=" assets/image/webp/white-shade-line-down.webp" alt="line"
                                     class="absolute bottom-[-34px] translate-x-1">
                                 <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-2</h2>
@@ -420,9 +419,11 @@
 
                             </div>
                             <ul class="absolute xl:bottom-[-318px] -bottom-96 translate-x-[295px] w-full">
-                                <li class="text-white list-disc text-[22px] xl:w-[370px] font-normal leading-[150%]">Sagittis
+                                <li class="text-white list-disc text-[22px] xl:w-[370px] font-normal leading-[150%]">
+                                    Sagittis
                                     tristique molestie eupharetra.</li>
-                                <li class="text-white list-disc text-[22px] xl:w-[367px] font-normal leading-[150%]">Nibh convallis
+                                <li class="text-white list-disc text-[22px] xl:w-[367px] font-normal leading-[150%]">
+                                    Nibh convallis
                                     ornare fringilla diam proin volutpat aliquet nunc.</li>
                             </ul>
                         </div>
@@ -445,7 +446,8 @@
                         <div class="relative">
                             <div
                                 class="absolute bg-[url('assets/image/webp/red-ring-img.webp')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] bottom-[-183px] left-[746px] flex items-center justify-center">
-                                <img class="pointer-events-none absolute -top-36 max-w-[334px] pl-2" src="./assets/image/webp/white-ring-img.png" alt="white-ring-img">
+                                <img class="pointer-events-none absolute -top-36 max-w-[334px] pl-2"
+                                    src="./assets/image/webp/white-ring-img.png" alt="white-ring-img">
                                 <img src=" assets/image/webp/white-shade-line-down.webp" alt="line"
                                     class="absolute bottom-[-34px] translate-x-1">
                                 <h2 class="text-white text-[40px] max-md:text-4xl max-sm:text-3xl">Phase-4</h2>
@@ -456,12 +458,13 @@
                             <ul class="absolute xl:bottom-[-318px] -bottom-[420px] translate-x-[795px] xl:w-[458px]">
                                 <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Eget imperdiet
                                     mauris interdum ut egestas lacinia lacus.</li>
-                                <li class="text-white list-disc text-[22px] max-w-[358px] font-normal leading-[150%]">Non ipsum,
+                                <li class="text-white list-disc text-[22px] max-w-[358px] font-normal leading-[150%]">
+                                    Non ipsum,
                                     cursus consectetur fringilla aliquam.</li>
                             </ul>
                         </div>
                         <div class="relative">
-                            <ul class="absolute top-[-350px] translate-x-[1035px] w-full 2xl:w-[190px]">
+                            <ul class="absolute top-[-350px] translate-x-[1035px] w-full lg:w-[190px]">
                                 <li class="text-white list-disc text-[22px] font-normal leading-[150%]">Elementum
                                     elementum sit mauris amet non.</li>
                             </ul>
@@ -481,12 +484,10 @@
                             <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-1</h2>
                         </div>
                         <div>
-                            <ul class="max-sm:max-w-32">
-                                <li
-                                    class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
+                            <ul class="max-sm:max-w-36">
+                                <li class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
                                     Ut eu ac sed duis nec amet.</li>
-                                <li
-                                    class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
+                                <li class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
                                     Sed elementum a tortor eros.</li>
                             </ul>
                         </div>
@@ -497,12 +498,10 @@
                             <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-2</h2>
                         </div>
                         <div>
-                            <ul class="max-sm:max-w-32">
-                                <li
-                                    class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
+                            <ul class="max-sm:max-w-36">
+                                <li class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
                                     Sagittis tristique molestie eu pharetra.</li>
-                                <li
-                                    class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
+                                <li class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
                                     Nibh convallis ornare fringilla diam proin volutpat aliquet nunc.</li>
                             </ul>
                         </div>
@@ -513,7 +512,7 @@
                             <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-3</h2>
                         </div>
                         <div>
-                            <ul class="max-sm:max-w-32">
+                            <ul class="max-sm:max-w-36">
                                 <li
                                     class="text-white list-disc lg:text-base text-xs w-full font-normal leading w-fullxt-base">
                                     Adipiscing velit turpis pretium, tellus.</li>
@@ -529,12 +528,10 @@
                             <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-4</h2>
                         </div>
                         <div>
-                            <ul class="max-sm:max-w-32">
-                                <li
-                                    class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
+                            <ul class="max-sm:max-w-36">
+                                <li class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
                                     Eget imperdiet mauris interdum ut egestas lacinia lacus.</li>
-                                <li
-                                    class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
+                                <li class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
                                     Non ipsum, cursus consectetur fringilla aliquam.</li>
                             </ul>
                         </div>
@@ -545,11 +542,10 @@
                             <h2 class="text-white text-[30px]  max-sm:text-2xl">Phase-5</h2>
                         </div>
                         <div>
-                            <ul class="max-sm:max-w-32">
-                                <li
-                                    class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
+                            <ul class="max-sm:max-w-36">
+                                <li class="text-white list-disc lg:text-base text-xs font-normal leading-[150%] w-full">
                                     Elementum elementum sit mauris amet non.</li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -558,56 +554,71 @@
         </section>
 
         <!-- ================================= Team section ============================================= -->
-        <section id="team" class="bg-dark-blue xl:pt-[67px] lg:pt-32 md:pt-12 pt-7 xl:pb-[123px] lg:pb-14 md:pb-12 pb-8 -mt-1">
-            <div
-                class="container !max-w-[1320px] mx-auto max-xl:px-4 relative">
+        <section id="team"
+            class="max-2xl:px-4 bg-dark-blue xl:pt-[67px] lg:pt-32 md:pt-12 pt-7 xl:pb-[123px] lg:pb-14 md:pb-12 pb-8 -mt-1">
+            <div class="container !max-w-[1320px] mx-auto max-xl:px-4 relative">
                 <h2
                     class="lg:text-7xl sm:text-6xl text-4xl font-bold text-primary lg:mb-14 md:mb-10 sm:mb-7 mb-3 font-godzilla text-center">
                     TEAM
                 </h2>
-                <button class="slick-prev w-full 2xl:max-w-[83px] max-w-12 2xl:translate-x-[-60px] xl:mt-[57px] -translate-x-4">
+                <button
+                    class="slick-prev w-full 2xl:max-w-[83px] max-w-12 2xl:translate-x-[-60px] xl:mt-[57px] -translate-x-4">
                     <img class="w-full max-xl:hidden" src="./assets/image//webp/slider-prev-btn.webp" alt="Prev-btn">
                 </button>
                 <div class="card-slider">
                     <div class="flex flex-col justify-center items-center mx-auto">
                         <img class="max-w-[424px] w-full" src="./assets/image/webp/slider-img-1.webp" alt="team-slider">
-                        <h3 class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">Boss Kaijuu</h3>
+                        <h3
+                            class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">
+                            Boss Kaijuu</h3>
                         <p class="font-righteous xl:text-lg lg:text-base text-sm text-white text-center">KJC#29</p>
                     </div>
                     <div class="flex flex-col">
                         <img class="max-w-[424px] w-full" src="./assets/image/webp/slider-img-2.webp" alt="team-slider">
-                        <h3 class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">???</h3>
+                        <h3
+                            class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">
+                            ???</h3>
                         <p class="font-righteous xl:text-lg lg:text-base text-sm text-white text-center">KJC#29</p>
                     </div>
                     <div class="flex flex-col">
                         <img class="max-w-[424px] w-full" src="./assets/image/webp/slider-img-2.webp" alt="team-slider">
-                         <h3 class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">???</h3>
+                        <h3
+                            class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">
+                            ???</h3>
                         <p class="font-righteous xl:text-lg lg:text-base text-sm text-white text-center">KJC#29</p>
                     </div>
                     <div class="flex flex-col">
-                        <img class="max-w-[424px] w-full" src="../assets/image/webp/slider-img-1.webp" alt="team-slider">
-                        <h3 class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">Boss Kaijuu</h3>
+                        <img class="max-w-[424px] w-full" src="../assets/image/webp/slider-img-1.webp"
+                            alt="team-slider">
+                        <h3
+                            class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">
+                            Boss Kaijuu</h3>
                         <p class="font-righteous xl:text-lg lg:text-base text-sm text-white text-center">KJC#29</p>
                     </div>
                     <div class="flex flex-col">
                         <img class="max-w-[424px] w-full" src="./assets/image/webp/slider-img-2.webp" alt="team-slider">
-                         <h3 class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">???</h3>
+                        <h3
+                            class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">
+                            ???</h3>
                         <p class="font-righteous xl:text-lg lg:text-base text-sm text-white text-center">KJC#29</p>
                     </div>
                     <div class="flex flex-col">
                         <img class="max-w-[424px] w-full" src="./assets/image/webp/slider-img-2.webp" alt="team-slider">
-                         <h3 class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">???</h3>
+                        <h3
+                            class="font-righteous xl:text-4xl lg:text-3xl md:text-2xl text-xl lg:mb-2 mb-1 text-center text-white">
+                            ???</h3>
                         <p class="font-righteous xl:text-lg lg:text-base text-sm text-white text-center">KJC#29</p>
                     </div>
                 </div>
-                <button class="slick-next w-full 2xl:max-w-[83px] max-w-12 2xl:translate-x-[60px] xl:mt-6 translate-x-4">
+                <button
+                    class="slick-next w-full 2xl:max-w-[83px] max-w-12 2xl:translate-x-[60px] xl:mt-6 translate-x-4">
                     <img class="w-full max-xl:hidden" src="./assets/image/webp/slider-next-btn.webp" alt="Next-btn">
                 </button>
             </div>
         </section>
 
         <!-- ================================= FAQ and footer section ====================================== -->
-        <section id="faq" class="bg-water-bg-3 bg-cover -mt-1 lg:pt-[98px] md:pt-12 pt-7">
+        <section id="faq" class="max-2xl:px-4 bg-water-bg-3 bg-cover -mt-1 lg:pt-[98px] md:pt-12 pt-7">
             <div
                 class="container flex flex-col justify-center px-3 mx-auto max-w-[1320px] w-full xl:pb-[120px] lg:pb-20 pb-12 items-center">
                 <div>
@@ -620,7 +631,8 @@
                     <!-- Accordion Item 1 -->
                     <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:pt-[20px] lg:pb-[14px] max-lg:py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
                         onclick="toggleAccordion(this)">
-                        <div class="flex justify-between text-white items-center leading-primary font-bold lg:text-[22px] text-base">
+                        <div
+                            class="flex justify-between text-white items-center leading-primary font-bold lg:text-[22px] text-base">
                             <span>Volutpat gravida sapien in purus</span>
                             <svg class="accordion-icon transition-transform duration-300" width="11" height="8"
                                 viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -629,7 +641,7 @@
                             </svg>
                         </div>
                         <div
-                            class="accordion-content max-w-[751px] lg:pb-[17px] pb-3 leading-primary lg:mt-[34px] md:mt-6 mt-4 lg:text-[22px] text-base text-white">
+                            class="accordion-content max-w-[751px] lg:pb-[17px] pb-3 leading-primary xl:mt-[34px] lg:mt-7 md:mt-6 mt-4 lg:text-[22px] text-base text-white">
                             Ac pretium feugiat sed id ut viverra nunc lacus, pulvinar purus malesuada adipiscing nisl
                             nullam mi diam sit nisi consectetur non etiam diam.
                         </div>
@@ -638,7 +650,8 @@
                     <!-- Accordion Item 2 -->
                     <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:pt-[20px] lg:pb-[14px] max-lg:py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
                         onclick="toggleAccordion(this)">
-                        <div class="flex justify-between text-white items-center leading-primary font-bold lg:text-[22px] text-base">
+                        <div
+                            class="flex justify-between text-white items-center leading-primary font-bold lg:text-[22px] text-base">
                             <span>Volutpat gravida sapien in purus</span>
                             <svg class="accordion-icon transition-transform duration-300" width="11" height="8"
                                 viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -647,7 +660,7 @@
                             </svg>
                         </div>
                         <div
-                            class="accordion-content max-w-[751px] lg:pb-[17px] pb-3 leading-primary lg:mt-[40px] md:mt-6 mt-4 lg:text-[22px] text-base text-white">
+                            class="accordion-content max-w-[751px] lg:pb-[17px] pb-3 leading-primary xl:mt-[34px] lg:mt-7 md:mt-6 mt-4 lg:text-[22px] text-base text-white">
                             Ac pretium feugiat sed id ut viverra nunc lacus, pulvinar purus malesuada adipiscing nisl
                             nullam mi diam sit nisi consectetur non etiam diam.
                         </div>
@@ -656,7 +669,8 @@
                     <!-- Accordion Item 3 -->
                     <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:pt-[20px] lg:pb-[14px] max-lg:py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
                         onclick="toggleAccordion(this)">
-                        <div class="flex justify-between text-white items-center leading-primary font-bold lg:text-[22px] text-base">
+                        <div
+                            class="flex justify-between text-white items-center leading-primary font-bold lg:text-[22px] text-base">
                             <span>Volutpat gravida sapien in purus</span>
                             <svg class="accordion-icon transition-transform duration-300" width="11" height="8"
                                 viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -665,7 +679,7 @@
                             </svg>
                         </div>
                         <div
-                            class="accordion-content max-w-[751px] lg:pb-[17px] pb-3 leading-primary lg:mt-[40px] md:mt-6 mt-4 lg:text-[22px] text-base text-white">
+                            class="accordion-content max-w-[751px] lg:pb-[17px] pb-3 leading-primary xl:mt-[34px] lg:mt-7 md:mt-6 mt-4 lg:text-[22px] text-base text-white">
                             Ac pretium feugiat sed id ut viverra nunc lacus, pulvinar purus malesuada adipiscing nisl
                             nullam mi diam sit nisi consectetur non etiam diam.
                         </div>
@@ -674,7 +688,8 @@
                     <!-- Accordion Item 4 -->
                     <div class="accordion-item backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:pt-[20px] lg:pb-[14px] max-lg:py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
                         onclick="toggleAccordion(this)">
-                        <div class="flex justify-between text-white items-center leading-primary font-bold lg:text-[22px] text-base">
+                        <div
+                            class="flex justify-between text-white items-center leading-primary font-bold lg:text-[22px] text-base">
                             <span>Volutpat gravida sapien in purus</span>
                             <svg class="accordion-icon transition-transform duration-300" width="11" height="8"
                                 viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -683,18 +698,19 @@
                             </svg>
                         </div>
                         <div
-                            class="accordion-content max-w-[751px] lg:pb-[17px] pb-3 leading-primary lg:mt-[40px] md:mt-6 mt-4 lg:text-[22px] text-base text-white">
+                            class="accordion-content max-w-[751px] lg:pb-[17px] pb-3 leading-primary xl:mt-[34px] lg:mt-7 md:mt-6 mt-4 lg:text-[22px] text-base text-white">
                             Ac pretium feugiat sed id ut viverra nunc lacus, pulvinar purus malesuada adipiscing nisl
                             nullam mi diam sit nisi consectetur non etiam diam.
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container flex flex-col justify-center lg:pb-[60px] md:pb-12 pb-4 lg:pt-[72px] md:pt-12 pt-7 mx-auto max-w-[1320px] w-full items-center">
-                <h2
+            <div
+                class="container flex flex-col justify-center lg:pb-[60px] md:pb-12 pb-4 lg:pt-[72px] md:pt-12 pt-7 mx-auto max-w-[1320px] w-full items-center">
+              <a href="/">  <h2
                     class="lg:text-4xl text-3xl font-godzilla max-w-[670px] text-primary text-center leading-none xl:mb-[28px] lg:mb-6 mb-4">
                     Kaijuu<span class="text-white font-godzilla">Crew</span>
-                </h2>
+                </h2></a>
                 <div class="flex gap-[24px] max-h-[41px] lg:mb-7 md:mb-5 mb-4">
                     <a href="https://x.com/" target="_blank">
                         <img class="hover:scale-[1.09] duration-300 ease-linear lg:max-w-[41px] md:max-w-9 max-w-7"
