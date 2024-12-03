@@ -49,3 +49,34 @@ animation-play-state: paused;
     flex-shrink: 0;  
     width: auto;  
 }
+/*========================== scroll btn keyframe ============================== */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+@media (min-width:1920px) {
+    .icon {
+        right: calc((100vw - 1920px) / 2 + 30px) !important;
+    }
+}
+
+/* ====================================== */
+.slick-dots li button:before{
+    size: 10px !important;
+    font-size: 14px !important;
+    color: white !important;
+    width: 10px !important;
+    margin-top: 20px !important;
+}

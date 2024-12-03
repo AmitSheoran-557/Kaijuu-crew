@@ -104,6 +104,14 @@ $(".card-slider").slick({
     nextArrow: $(".slick-next"),
     responsive: [
         {
+            breakpoint: 1440,
+            settings: {
+                dots: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            },
+        },
+        {
             breakpoint: 992,
             settings: {
                 slidesToShow: 2,
@@ -128,4 +136,33 @@ languageSelect.addEventListener('change', (event) => {
 
     const newFlag = selectedOption.getAttribute('data-flag');
     flagImg.src = newFlag;
+});
+// ============================== scrool up btn js ===================================
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+let scrollTrigger = 300;
+
+function updateScrollTrigger() {
+    if (window.innerWidth >= 1024) {
+        scrollTrigger = 500;
+    } else {
+        scrollTrigger = 300;
+    }
+}
+
+updateScrollTrigger();
+window.addEventListener('resize', updateScrollTrigger);
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > scrollTrigger) {
+        scrollToTopBtn.classList.remove('hidden');
+    } else {
+        scrollToTopBtn.classList.add('hidden');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
